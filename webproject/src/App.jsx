@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import LeagueTable from './league-table/League.Table';
 
-import './styles.scss';
+import '../src';
 
 class App extends Component {
     render() {

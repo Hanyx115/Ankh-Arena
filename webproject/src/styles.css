@@ -2,12 +2,10 @@ html {
     font-size: 16px;
 }
 
-* {
-    &,
-    &:after,
-    &:before {
-        box-sizing: border-box;
-    }
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
 }
 
 body {
@@ -20,8 +18,8 @@ body {
 .lt-grid {
     display: grid;
     grid-template-columns: 3ch 2fr repeat(5, minmax(5ch, 60px));
+}
 
-    &--centered {
-        text-align: center;
-    }
+.lt-grid--centered {
+    text-align: center;
 }
