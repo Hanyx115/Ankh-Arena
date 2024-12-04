@@ -1,0 +1,136 @@
+/* General Container Styling */
+.player-ranking-container {
+  /* padding: 20px; */
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  /* background: linear-gradient(120deg, #f4f4f4, #e6e6e6); */
+  border-radius: 12px;
+  /* box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); */
+  max-width: 1100px;
+  margin-top: auto;
+}
+
+.player-ranking-container h1 {
+  font-size: 2rem; /* Adjust font size as needed */
+  font-weight: bold;
+  color: white;
+  display: inline-block; /* Ensures gradient applies to text */
+  text-align: center; /* Center the text */
+  font-family: 'Arial', sans-serif; /* Optional: Apply a custom font */
+  padding: 20px; /* Optional: Add padding for spacing */
+  margin-bottom: 20px;
+}
+
+
+/* Filter Container Styling */
+.filter-container input {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.filter-container input:focus {
+  box-shadow: 0 4px 8px rgba(0, 128, 255, 0.2);
+  outline: none;
+  transform: scale(1.02);
+}
+
+/* Sort Buttons Styling */
+.sort-container button {
+  background: linear-gradient(90deg, #2b6cb0, #1e4d78);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 10px;
+  transition:  0.3s ease, transform 0.2s ease;
+}
+
+.sort-container button:hover {
+  background: linear-gradient(90deg, #1e4d78, #2b6cb0);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Player Table Styling */
+.player-table {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.30);
+}
+
+.player-table th,
+.player-table td {
+  border: 1px solid #ddd;
+  padding: 12px 30px;
+  text-align: center;
+}
+
+.player-table th {
+  background: linear-gradient(90deg, #2b6cb0, #1e4d78);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.player-table td {
+  background-color: #fafafa;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.player-table tr:nth-child(even) td {
+  background-color: #f7f7f7;
+}
+
+.player-table tr:hover td {
+  background-color: #ebeff5;
+  color: #000;
+}
+
+.player-table td:first-child {
+  font-weight: bold;
+  color: #555;
+}
+
+.player-table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.player-table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Animation for Fade-In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+

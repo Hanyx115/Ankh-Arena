@@ -1,0 +1,85 @@
+/* General navigation styling */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right,rgb(71, 3, 71),rgb(15, 228, 15));
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  /* background-image: url('./fer3on.png');
+  background-size: contain;
+  background-repeat: no-repeat; */
+
+}
+
+
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.nav-links button:hover {
+  transform: scale(1.1); /* Makes the button "pop out" */
+  background-color: white;
+  color: #282c34;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2); /* Adds a shadow effect */
+}
+
+.cta {
+  display: flex;
+}
+
+.cta .login{
+  background-color: white;
+  color: #282c34;
+  border: 2px solid #61dafb;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+} 
+.cta .signup {
+  background-color: #61dafb;
+  color: #282c34;
+  border: 2px solid #61dafb;
+  border-radius: 20px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.cta .login:hover,
+.cta .signup:hover {
+  transform: scale(1.1); /* Same "pop out" effect for the CTA buttons */
+  background-color: #282c34;
+  color: #61dafb;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow effect */
+}

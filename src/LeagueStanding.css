@@ -1,0 +1,198 @@
+/* General League Container Styling */
+.league-container {
+  padding: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  /* background: linear-gradient(120deg, #f4f4f4, #e6e6e6); */
+  border-radius: 12px;
+  /* box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); */
+}
+
+.league-container h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  display: inline-block; /* Ensures gradient applies to text */
+  text-align: center; /* Center the text */
+  font-family: 'Arial', sans-serif; /* Optional: Apply a custom font */
+  padding: 20px; /* Optional: Add padding for spacing */
+  color: white;
+}
+
+/* Table Styling */
+.league-table {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: fadeIn 1s ease-in-out;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.league-table th,
+.league-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center;
+}
+
+.league-table th {
+  background: linear-gradient(90deg, #2b6cb0, #1e4d78);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.league-table td {
+  background-color: #fafafa;
+  font-size: 0.95rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.league-table tr:nth-child(even) td {
+  background-color: #f7f7f7;
+}
+
+.league-table tr:hover td {
+  background-color: #ebeff5;
+  color: #000;
+}
+
+.league-table td:first-child {
+  font-weight: bold;
+  color: #555;
+}
+
+.league-table tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.league-table tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Highlighted Row Styling */
+.team-row.highlighted {
+  background-color: rgba(43, 108, 176, 0.1); /* Light blue background */
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.02);
+}
+
+/* Player Stats Row Styling */
+.player-stats-row {
+  background-color: #f2f8fc;
+  font-size: 0.9rem;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.player-stats {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #333;
+  font-style: italic;
+}
+
+.player-stats div {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #e9f5ff;
+  transition: transform 0.3s ease;
+}
+
+.player-stats div:hover {
+  transform: scale(1.05);
+  background-color: #d7efff;
+}
+
+/* Shuffle Button Styling */
+.shuffle-button {
+  background: linear-gradient(90deg, #2b6cb0, #1e4d78);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition:  0.3s ease, transform 0.2s ease;
+}
+
+.shuffle-button:hover {
+  background: linear-gradient(90deg, #1e4d78, #2b6cb0);
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Dialog Box Styling */
+.dialog-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
+  z-index: 1000;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.dialog-box h2 {
+  margin-bottom: 1rem;
+}
+
+.dialog-box select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.dialog-box button {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dialog-box button:hover {
+  background-color: #0056b3;
+}
